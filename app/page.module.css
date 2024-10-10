@@ -1,165 +1,324 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
+.header {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  justify-content: space-between; /* Places items on either end of the line */
+  align-items: center; /* Aligns items vertically in the center */
+  padding: 0.2rem;
 }
 
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+.headerTitle {
+  font-size: 4rem;
+  font-family: 'Pixelify Sans', cursive;
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
+.headerAuthor {
+  font-size: 3.5rem;
+  font-family: 'Pixelify Sans', cursive;
+  z-index: 2;
 }
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
+.lottieContainer {
   display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.icon{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+
+.aboutMeContainer {
+  text-align: left;
+  padding: 4rem 2rem;
+  /* background-color: #f4f4f4; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.aboutMeContainer h2 {
+  margin-right: 20rem; 
+  font-size: 2rem;
+  white-space: nowrap;
+  color: rgb(4, 4, 4);
+  font-family: 'Pixelify Sans', cursive;
+}
+
+.aboutMeContainer p {
+  font-size: 1rem;
+}
+
+.aboutMeContainer a {
+  text-decoration: none;
+  color: #ee7575;
+}
+
+.stack {
+  padding: 2rem;
+}
+
+.stack h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: rgb(4, 4, 4);
+  font-family: 'Pixelify Sans', cursive;
+}
+
+.techContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+.techStackButton {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #007BFF;
+  color: white;
   font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.techStackButton:hover {
+  background-color: #0056b3;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.techStackButton:active {
+  background-color: #004080;
+}
+
+.techStackButton {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #ee7575;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techStackButton:hover {
+  background-color: #f3abab;
+}
+
+.techStackButton:active {
+  background-color: #004080;
+}
+
+.techStackButton2 {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techStackButton2:hover {
+  background-color: #0056b3;
+}
+
+.techStackButton2:active {
+  background-color: #004080;
+}
+
+.techStackButton3 {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #459116;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techStackButton3:hover {
+  background-color: #326911;
+}
+
+.techStackButton3:active {
+  background-color: #004080;
+}
+
+.techStackButton4 {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #dc6520;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techStackButton4:hover {
+  background-color: #eb944d;
+}
+
+.techStackButton4:active {
+  background-color: #004080;
+}
+
+.techStackButton5 {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #7e20dc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.techStackButton5:hover {
+  background-color: #3c096f;
+}
+
+.techStackButton5:active {
+  background-color: #004080;
+}
+
+
+
+.projects {
+  padding: 2rem;
+}
+
+.projects h2 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: rgb(4, 4, 4);
+  font-family: 'Pixelify Sans', cursive;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 3rem;
+}
+
+.project {
+  text-align: justify;
+  /* background-color: #f9f9f9;*/
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.project a {
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: rgb(4, 4, 4);
+  font-family: 'Pixelify Sans', cursive;
 }
 
 .footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
+  padding: 2rem;
+  background-color: #dedddd;
+  color: rgb(4, 4, 4);
 }
 
-.footer a {
+.getInTouch{
+font-size: 1.5rem;
+margin-right: 2rem;
+font-family: 'Pixelify Sans', cursive;
+}
+
+.contact {
   display: flex;
+  justify-content: space-between;  /* Creates even spacing between the buttons */
+  gap: 20px;  /* Adds space between buttons (adjust as needed) */
   align-items: center;
-  gap: 8px;
 }
 
-.footer img {
-  flex-shrink: 0;
+.buttonFooter1 {
+  background-color: #ee7575;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.buttonFooter1:hover {
+  background-color: #3c3d3e;
 }
+
+.buttonFooter2 {
+  background-color: #459116;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonFooter2:hover {
+  background-color: #3c3d3e;
+}
+
+.buttonFooter3 {
+  background-color: #7e20dc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonFooter3:hover {
+  background-color: #3c3d3e;
+}
+
+
+
 
 @media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+  .tech-stack-button {
+      width: 100%;
+      text-align: center;
   }
 }
