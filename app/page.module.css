@@ -288,7 +288,6 @@ font-family: 'Pixelify Sans', cursive;
   justify-content: space-between;  /* Creates even spacing between the buttons */
   gap: 1rem;  /* Adds space between buttons (adjust as needed) */
   align-items: center;
-  
 }
 
 .footterButtons {
@@ -305,7 +304,6 @@ font-family: 'Pixelify Sans', cursive;
   border-radius: 0px;
   transition: background-color 0.3s ease;
   white-space: nowrap;
-  
 }
 
 .buttonFooter1:hover {
@@ -406,32 +404,36 @@ font-family: 'Pixelify Sans', cursive;
 
   .footer {
       text-align: center;
-      width: 100%;
+      align-items: center;
   }   
 
   .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}  
+
+  .footerButtons {
+      display: flex;
+      align-items: center;
       flex-direction: column;
+      flex-wrap: wrap;
+      
   }
 
-  .footterButtons {
-      display: flex;
-      height: 100%;
-      flex-wrap: wrap;
-      overflow: hidden;
-  }
   .buttonFooter1 {
-      width: 100%;
       white-space: nowrap;
   }
 
   }
 
   .buttonFooter2 {
-      width: 100%;
+      
       white-space: nowrap;
   }
 
   .buttonFooter3 {
-      width: 100%;
       white-space: nowrap;
   }
