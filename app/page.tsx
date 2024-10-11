@@ -11,7 +11,11 @@ export default function Home() {
     <div className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.headerTitle}>Portfolio</h1>
-        <Image src="/linkedin.png" alt="Icon LinkedIn" width={32} height={32} />
+        <div className={styles.containerIcons}> 
+        <Image src="/email-32.png" alt="Icon Email" width={32} height={32} />
+        <Link href="https://www.linkedin.com/in/constanza-ram%C3%ADrez-arts/" target="_blank"><Image src="/linkedin.png" alt="Icon LinkedIn" width={32} height={32}/></Link>
+        
+        </div>
       </header>
 
       <section className={styles.hero}>
@@ -31,6 +35,7 @@ export default function Home() {
       </section>
 
       <section className={styles.stack}>
+        <div className={styles.stackContainer}>
         <h2>Tech Stack</h2>
         <div className={styles.techContainer}>
           <ul>
@@ -51,32 +56,29 @@ export default function Home() {
             <button className={styles.techStackButton4} data-lang="Git Hub">Git Hub</button>
           </ul>
         </div>
+        </div>
       </section>
 
       <section className={styles.projects}>
         <h2>Projects</h2>
         <div className={styles.projectGrid}>
           <div className={styles.project}>
-            <Image src="/my-app/app/public/baggit-logo.png" alt="Logo BaggIt App" width={500} height={300} />
-            <Link href="https://www.figma.com/board/KStmAELGoiVoV5DzSUPtWX/BaggIt-APP-(detailed)?node-id=0-1&t=pNCvtnCgvnZl8md2-1" target="_blank"><h3>BaggIt App</h3></Link>
+            <Link href="https://www.figma.com/board/KStmAELGoiVoV5DzSUPtWX/BaggIt-APP-(detailed)?node-id=0-1&t=pNCvtnCgvnZl8md2-1" target="_blank"><h3> <Image src="/suitcase-64.png" alt="Suitcase icon" width={64} height={64} /> BaggIt App</h3></Link>
             <p>
             The primary challenge BaggIt addresses is the lack of a convenient, organized solution for travelers to store and manage their belongings on the go. On this project, I led the design and contributed to the front-end development, creating intuitive, user-friendly interface components that ensure a seamless user experience. I also developed the logo, brand identity, and all the visual assets used within the app..</p>
           </div>
           <div className={styles.project}>
-            <Image src="/image2.jpg" alt="Project 2" width={500} height={300} />
-            <Link href="https://www.figma.com/board/GXsyW08KfIt33EWqtGOkiH/Weather-App-Process?node-id=0-1&t=PiTMoylOHIh6Z6oz-1" target="_blank"><h3>Weather App</h3> </Link>
+            <Link href="https://www.figma.com/board/GXsyW08KfIt33EWqtGOkiH/Weather-App-Process?node-id=0-1&t=PiTMoylOHIh6Z6oz-1" target="_blank"><h3> <Image src="/barometer-64.png" alt="Barometer icon" width={64} height={64} /> Weather App</h3> </Link>
             <p>
             This simple, user-friendly tool allows you to quickly check the weather for any city. The development process behind the app involved a structured approach, starting with brainstorming various features and layouts to ensure the design was intuitive and easy to use. Feedback played a key role in this iteration process, helping us plan a more efficient and accessible tool. Looking ahead, we have plans for future improvements, including changing the visuals, and enhanced accessibility features, with the goal of continuously improving the app for a diverse range of users.</p>
           </div>
           <div className={styles.project}>
-            <Image src="/image2.jpg" alt="Project 2" width={500} height={300} />
-            <Link href="https://www.figma.com/board/JRbX20xi3cogIFmaBYi3pA/User-Research-and-Ideation-Methods-for-LPA-App?node-id=0-1&t=E1eLVbVUFXJ0VzeF-1" target="_blank"><h3>LPA Research and Ideation</h3></Link>
+            <Link href="https://www.figma.com/board/JRbX20xi3cogIFmaBYi3pA/User-Research-and-Ideation-Methods-for-LPA-App?node-id=0-1&t=E1eLVbVUFXJ0VzeF-1" target="_blank"><h3> <Image src="/letter-clinic-64.png" alt="Medical Letter icon" width={64} height={64} /> LPA Research and Ideation</h3></Link>
             <p>
             In this project, we explored various approaches to develop an optimal Low Power Application (LPA) solution. Our focus was on analyzing different user journeys and scenarios, carefully considering the needs and behaviours of our target users. Based on self-conducted research, we examined a wide range of potential solutions, evaluating how each one could enhance both functionality and user experience.</p>
           </div>
           <div className={styles.project}>
-            <Image src="/photowebsite.png" alt="Project 1" width={500} height={300} />
-            <Link href="https://www.connieramphoto.co.uk/" target="_blank"><h3>Photographic website</h3></Link>
+            <Link href="https://www.connieramphoto.co.uk/" target="_blank"><h3> <Image src="/camera-64.png" alt="Camera icon" width={64} height={64} /> Photographic website</h3></Link>
             <p>A visually striking and user-centered photography portfolio designed and developed to highlight the artistic work of Connie Ramirez Photography. The website features a clean, minimalist layout with a mobile-first responsive design, intuitive navigation, and a focus on high-quality imagery. The UX/UI design ensures an immersive experience, allowing the photography to take center stage while offering seamless interaction across devices. Designed with a full-stack approach, integrating modern web technologies to ensure speed and functionality.</p>
           </div>
         </div>

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 
-.container {
-  font-family: Arial, sans-serif;
+.container {  
+  font: 1em sans-serif;
   background-color: #fff;
   color: #333;
   line-height: 1.6;
@@ -25,6 +25,10 @@
   font-size: 3.5rem;
   font-family: 'Pixelify Sans', cursive;
   z-index: 2;
+}
+
+.header img {
+ margin-right: 1.5rem;
 }
 
 .lottieContainer {
@@ -52,7 +56,7 @@
 }
 
 .aboutMeContainer h2 {
-  margin-right: 20rem; 
+  margin-right: 15rem; 
   font-size: 2rem;
   white-space: nowrap;
   color: rgb(4, 4, 4);
@@ -72,16 +76,27 @@
   padding: 2rem;
 }
 
-.stack h2 {
+.stackContainer {
+  display: flex;
+  gap: 2rem;
   text-align: left;
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  padding: 1rem ;
+  flex-direction: row;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between;
+}
+
+
+
+.stack h2 {
+  font-size: 2rem;
   color: rgb(4, 4, 4);
   font-family: 'Pixelify Sans', cursive;
+  margin-right: 2rem;
 }
 
 .techContainer {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 2rem;
 }
@@ -239,7 +254,6 @@
 }
 
 .project img {
-  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -253,21 +267,25 @@
 }
 
 .footer {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #dedddd;
   color: rgb(4, 4, 4);
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;  /* Creates even spacing between the buttons */
+}
+
 .getInTouch{
 font-size: 1.5rem;
-margin-right: 2rem;
 font-family: 'Pixelify Sans', cursive;
 }
 
 .contact {
   display: flex;
   justify-content: space-between;  /* Creates even spacing between the buttons */
-  gap: 20px;  /* Adds space between buttons (adjust as needed) */
+  gap: 1rem;  /* Adds space between buttons (adjust as needed) */
   align-items: center;
 }
 
@@ -317,8 +335,87 @@ font-family: 'Pixelify Sans', cursive;
 
 
 @media (max-width: 600px) {
+  .header {
+      flex-direction: row;
+      align-items: center;
+  } 
+
+  .header img {
+      margin-right: 0;
+  }
+
+  .headerTitle {
+      font-size: 3rem;
+  }
+
+  .headerAuthor {
+      font-size: 2.5rem;
+  }
+
+  .aboutMeContainer {
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+  }
+
+  .aboutMeContainer h2 {
+      margin-right: 0;
+  }
+
+  .stackContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .stack h2 {
+      margin-right: 0;
+  }
+
+  .techContainer {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
   .tech-stack-button {
-      width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+  .projects h2 {
+      font-size: 2rem;
       text-align: center;
   }
+
+  .projectGrid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }   
+
+  .project {
+      text-align: justify;
+  }
+
+  .footer {
+      text-align: center;
+      width: 100%;
+  }   
+
+  .contact {
+      flex-direction: column;
+  }
+
+  .footterButtons {
+      display: flex;
+      height: 100%;
+  }
+  .buttonFooter1 {
+      width: 100%;
+  }
+
+  .buttonFooter2 {
+      width: 100%;
+  }
+
+  .buttonFooter3 {
+      width: 100%;
+  }
+  
 }
