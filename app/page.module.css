@@ -274,6 +274,7 @@
 
 .contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;  /* Creates even spacing between the buttons */
 }
 
@@ -287,6 +288,12 @@ font-family: 'Pixelify Sans', cursive;
   justify-content: space-between;  /* Creates even spacing between the buttons */
   gap: 1rem;  /* Adds space between buttons (adjust as needed) */
   align-items: center;
+  
+}
+
+.footterButtons {
+  display: flex;
+  overflow: hidden;
 }
 
 .buttonFooter1 {
@@ -297,6 +304,8 @@ font-family: 'Pixelify Sans', cursive;
   margin: 0.5rem;
   border-radius: 0px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
+  
 }
 
 .buttonFooter1:hover {
@@ -311,6 +320,7 @@ font-family: 'Pixelify Sans', cursive;
   margin: 0.5rem;
   border-radius: 0px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .buttonFooter2:hover {
@@ -325,6 +335,7 @@ font-family: 'Pixelify Sans', cursive;
   margin: 0.5rem;
   border-radius: 0px;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 .buttonFooter3:hover {
@@ -378,7 +389,7 @@ font-family: 'Pixelify Sans', cursive;
   .tech-stack-button {
     width: 100%;
     text-align: center;
-}
+  }
 
   .projects h2 {
       font-size: 2rem;
@@ -405,17 +416,22 @@ font-family: 'Pixelify Sans', cursive;
   .footterButtons {
       display: flex;
       height: 100%;
+      flex-wrap: wrap;
+      overflow: hidden;
   }
   .buttonFooter1 {
       width: 100%;
+      white-space: nowrap;
+  }
+
   }
 
   .buttonFooter2 {
       width: 100%;
+      white-space: nowrap;
   }
 
   .buttonFooter3 {
       width: 100%;
+      white-space: nowrap;
   }
-  
-}
