@@ -29,7 +29,11 @@ export default function Home() {
         <div className={styles.aboutMeContainer}>
         <h2>About me</h2>
         <p>
-          I am a <Link href="https://www.saatchiart.com/en-gb/connievisualarts?srsltid=AfmBOop_Z4_1uFdaTnYN_-eeAcnDMbaCedD4C6y6IHp-Db9IyuhRCQLp" target="_blank"> Visual Artist </Link> and <Link href="https://www.connieramphoto.co.uk/" target="_blank"> Photographer </Link> with a passion for capturing the beauty of the world through my lens. My journey has taken me through various creative landscapes, from fine arts to digital photography, where I've honed my skills in visual storytelling. Now, I'm exploring the fascinating intersection of art and technology by integrating code into my portfolio.
+          I am a <Link href="https://www.saatchiart.com/en-gb/connievisualarts?srsltid=AfmBOop_Z4_1uFdaTnYN_-eeAcnDMbaCedD4C6y6IHp-Db9IyuhRCQLp" target="_blank"> Visual Artist </Link> and <Link href="https://www.connieramphoto.co.uk/" target="_blank"> Photographer </Link> with a passion for capturing the beauty of the world through my lens. With nearly a decade of experience spanning photography, visual arts, and graphic design, I bring a unique blend of creative vision and technical expertise to every project I undertake. My work is driven by a passion for storytelling through visual mediums, which has evolved to encompass a deep focus on UX/UI design. I aim to create intuitive, user-centered digital experiences that not only engage but also solve real-world problems through thoughtful design.
+          
+          I'm proficient in industry-leading tools such as Figma, Photoshop, and Lightroom, and I leverage a solid foundation in HTML, CSS, React and JavaScript to bring designs to life in dynamic, responsive environments. My background in visual arts allows me to approach design with a fresh perspective, while my technical skills ensure that I can collaborate seamlessly with developers in Agile teams to deliver impactful solutions.
+
+          Beyond aesthetics, I am deeply committed to accessibility. I believe that digital experiences should be inclusive and usable by everyone, regardless of their abilities. I'm continuously learning and refining my approach to ensure that my designs are as functional as they are beautiful, creating seamless interactions that prioritize both user needs and business goals.
         </p>
         </div>
       </section>
