@@ -27,7 +27,12 @@ export default function Home() {;
 
       <section className={styles.aboutMe}>
         <div className={styles.aboutMeContainer}>
+        <div className={styles.aboutMeText}>
         <h2>About me</h2>
+        <Image src="/smiling open eyes.png" alt="girl icon" width={300} height={300}
+        onMouseEnter={() => ('/open mouth winking hand.png')}
+        onMouseLeave={() => ('/smiling open eyes.png')}/>
+        </div>
         <p>
           I am a <Link href="https://www.saatchiart.com/en-gb/connievisualarts?srsltid=AfmBOop_Z4_1uFdaTnYN_-eeAcnDMbaCedD4C6y6IHp-Db9IyuhRCQLp" target="_blank"> Visual Artist </Link> and <Link href="https://www.connieramphoto.co.uk/" target="_blank"> Photographer </Link> with a passion for capturing the beauty of the world through my lens. With nearly a decade of experience spanning photography, visual arts, and graphic design, I bring a unique blend of creative vision and technical expertise to every project I undertake. My work is driven by a passion for storytelling through visual mediums, which has evolved to encompass a deep focus on UX/UI design. I aim to create intuitive, user-centered digital experiences that not only engage but also solve real-world problems through thoughtful design.
           
@@ -84,6 +89,15 @@ export default function Home() {;
           <div className={styles.project}>
             <Link href="https://www.connieramphoto.co.uk/" target="_blank"><h3> <Image src="/camera-64.png" alt="Camera icon" width={64} height={64} /> Photographic website</h3></Link>
             <p>A visually striking and user-centered photography portfolio designed and developed to highlight the artistic work of Connie Ramirez Photography. The website features a clean, minimalist layout with a mobile-first responsive design, intuitive navigation, and a focus on high-quality imagery. The UX/UI design ensures an immersive experience, allowing the photography to take center stage while offering seamless interaction across devices.</p>
+          </div>
+          <div className={styles.project}>
+            <Link href="https://www.figma.com/board/KqL6poiU120C3r5EFA2R89/Mrs.-Bee?node-id=0-1&t=VauDG2KrrUzVB7jY-1/" target="_blank"><h3> <Image src="/bee-64.png" alt="Bee icon" width={64} height={64} /> Website optimization</h3></Link>
+            <p>This board outlines the processes for optimizing and enhancing the website for "Mrs. Bee Coffee London." I began by identifying the strengths of the current website, then explore potential user personas. With the suggested improvements implemented, I designed a new website that features clean visuals and professional content, ensuring smooth navigation for users.</p>
+          </div>
+          <div className={styles.project}>
+            <Link href="https://www.figma.com/board/KqL6poiU120C3r5EFA2R89/Mrs.-Bee?node-id=0-1&t=VauDG2KrrUzVB7jY-1/" target="_blank"><h3> <Image src="/book-64.png" alt="Book icon" width={64} height={64} /> The Know-it-all</h3></Link>
+            <p>Welcome to an AI chatbot that holds the answers to all your questions! But what makes it truly special is that you can tailor its responses to suit your preferences—so go ahead and explore! You might just be amazed by what you discover!
+            In this project, I had the exciting opportunity to lead the UI and front-end development, crafting an engaging and intuitive user experience.</p>
           </div>
         </div>
       </section>

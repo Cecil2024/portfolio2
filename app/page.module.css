@@ -45,7 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 250px;
 }
 
 .icon{
@@ -56,26 +56,39 @@
 }
 
 .aboutMeContainer {
-  text-align: left;
+  display: flex;
   padding: 4rem 4rem;
   /* background-color: #f4f4f4; */
-  display: flex;
-  flex-direction: row;
-  align-items: center; /* Align items vertically in the center */
+  align-items: flex-start; /* Align items vertically in the center */
   justify-content: space-between; /* Distribute space between items */
 }
 
-.aboutMeContainer h2 {
-  margin-right: 10rem; 
+.aboutmeText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.aboutMeText img {
+  height: auto;
+  border-radius: 10px;
+}
+
+.aboutMeText h2 {
   font-size: 2rem;
-  white-space: nowrap;
   color: rgb(4, 4, 4);
   font-family: 'Pixelify Sans', cursive;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutMeContainer p {
+  flex: 1;
   font-size: 1rem;
   text-align: justify;
+  margin-left: 3rem;
+  margin-top: auto;
 }
 
 .aboutMeContainer a {
@@ -372,16 +385,33 @@ font-family: 'Pixelify Sans', cursive;
       font-size: 2.5rem;
   }
 
+  .hero {
+    margin-bottom: 0.5rem;
+  }
+
   .aboutMeContainer {
       flex-direction: column;
       align-items: center;
       text-align: justify;
+      padding: 0.5rem;
   }
 
-  .aboutMeContainer h2 {
+  .aboutMeText {
       margin-right: 0;
   }
+  .aboutMeText h2 {
+    margin-bottom: 0.5rem;
+  }
 
+  .aboutMeContainer p {
+    margin-left: 0; /* Remove left margin on smaller screens */
+    padding: 2rem;
+  }
+
+  .aboutMeText p {
+    text-align: justify;
+    align-items: center;
+}
   .stackContainer {
       flex-direction: column;
       align-items: center;
