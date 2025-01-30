@@ -29,7 +29,7 @@ export default function Home() {;
         <div className={styles.aboutMeContainer}>
         <div className={styles.aboutMeText}>
         <h2>About me</h2>
-        <Image src="/smiling open eyes.png" alt="girl icon" width={300} height={300}
+        <Image src="/Connie animated1.gif" alt="girl icon" width={300} height={300}
         onMouseEnter={() => ('/open mouth winking hand.png')}
         onMouseLeave={() => ('/smiling open eyes.png')}/>
         </div>
@@ -88,7 +88,7 @@ export default function Home() {;
           </div>
           <div className={styles.project}>
             <Link href="https://www.connieramphoto.co.uk/" target="_blank"><h3> <Image src="/camera-64.png" alt="Camera icon" width={64} height={64} /> Photographic website</h3></Link>
-            <p>A visually striking and user-centered photography portfolio designed and developed to highlight the artistic work of Connie Ramirez Photography. The website features a clean, minimalist layout with a mobile-first responsive design, intuitive navigation, and a focus on high-quality imagery. The UX/UI design ensures an immersive experience, allowing the photography to take center stage while offering seamless interaction across devices.</p>
+            <p>A visually striking and user-centred photography portfolio designed and developed to highlight the artistic work of Connie Ramirez Photography. In addition to the website, I also crafted the entire branding and social content, ensuring a cohesive identity across all platforms. The website features a clean, minimalist layout with responsive design, intuitive navigation, and a focus on high-quality imagery. The UX/UI design ensures an immersive experience, allowing the photography to take centre stage while offering seamless interaction across devices.</p>
           </div>
           <div className={styles.project}>
             <Link href="https://www.figma.com/board/KqL6poiU120C3r5EFA2R89/Mrs.-Bee?node-id=0-1&t=VauDG2KrrUzVB7jY-1/" target="_blank"><h3> <Image src="/bee-64.png" alt="Bee icon" width={64} height={64} /> Website optimization</h3></Link>
