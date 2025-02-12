@@ -6,6 +6,7 @@ import styles from './page.module.css';
 import Lottie  from 'lottie-react';
 import animationData from './components/animations/bloques.json'; 
 
+
 export default function Home() {;
 
   return (
@@ -29,16 +30,16 @@ export default function Home() {;
         <div className={styles.aboutMeContainer}>
         <div className={styles.aboutMeText}>
         <h2>About me</h2>
-        <Image src="/Connie animated1.gif" alt="girl icon" width={300} height={300}
+        <Image src="/Connie animated1.gif" alt="girl icon" width={280} height={280}
         onMouseEnter={() => ('/open mouth winking hand.png')}
         onMouseLeave={() => ('/smiling open eyes.png')}/>
         </div>
         <p>
-          I am a <Link href="https://www.saatchiart.com/en-gb/connievisualarts?srsltid=AfmBOop_Z4_1uFdaTnYN_-eeAcnDMbaCedD4C6y6IHp-Db9IyuhRCQLp" target="_blank"> Visual Artist </Link> and <Link href="https://www.connieramphoto.co.uk/" target="_blank"> Photographer </Link> with a passion for capturing the beauty of the world through my lens. With nearly a decade of experience spanning photography, visual arts, and graphic design, I bring a unique blend of creative vision and technical expertise to every project I undertake. My work is driven by a passion for storytelling through visual mediums, which has evolved to encompass a deep focus on UX/UI design. I aim to create intuitive, user-centered digital experiences that not only engage but also solve real-world problems through thoughtful design.
-          
-          I'm proficient in industry-leading tools such as Figma, Photoshop, After Effects and Lightroom, and I leverage a solid foundation in HTML, CSS, React and JavaScript to bring designs to life in dynamic, responsive environments. My background in visual arts allows me to approach design with a fresh perspective, while my technical skills ensure that I can collaborate seamlessly with developers in Agile teams to deliver impactful solutions.
+          I am a <Link href="https://www.saatchiart.com/en-gb/connievisualarts?srsltid=AfmBOop_Z4_1uFdaTnYN_-eeAcnDMbaCedD4C6y6IHp-Db9IyuhRCQLp" target="_blank"> Visual Artist </Link> and <Link href="https://www.connieramphoto.co.uk/" target="_blank"> Photographer </Link> with nearly a decade of experience in photography, visual arts, and graphic design. I love capturing the beauty of the world and telling stories through my visuals. Recently, I’ve developed a strong focus on UX/UI design, aiming to create user-friendly digital experiences that address real-world challenges.
 
-          Beyond aesthetics, I am deeply committed to accessibility. I believe that digital experiences should be inclusive and usable by everyone, regardless of their abilities. I'm continuously learning and refining my approach to ensure that my designs are as functional as they are beautiful, creating seamless interactions that prioritize both user needs and business goals.
+          I’m skilled in tools like Figma, Photoshop, After Effects, and Lightroom, and I have a solid foundation in HTML, CSS, React, and JavaScript. My unique blend of creativity and technical know-how helps me collaborate effectively with Agile teams to deliver impactful designs.
+
+          Accessibility is a priority for me—I believe that everyone should enjoy inclusive digital experiences. I’m always learning to refine my approach, ensuring my designs are both functional and beautiful.
         </p>
         </div>
       </section>

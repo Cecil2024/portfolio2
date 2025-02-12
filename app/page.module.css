@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
+
+@font-face {
+  font-family: "Pixelmania"; 
+  src: local ("Pixelmania"), url("./fonts/Pixelmania.ttf") format("truetype");
+}
 
 .container {  
   font: 1rem sans-serif;
   background-color: #fff;
-  color: #333;
+  color: black;
   line-height: 1.6;
 }
 
@@ -13,16 +20,26 @@
   display: flex;
   justify-content: space-between; /* Places items on either end of the line */
   align-items: center; /* Aligns items vertically in the center */
-  padding: 0.2rem;
+  padding: 1rem;
+  margin: 0;
+  /* To make the header sticky */
+  position: sticky;
+  top: 0;
+  background-color: #fff;/* Grey */
+  z-index: 1000;
 }
 
 .headerTitle {
   font-size: 4rem;
   font-family: 'Pixelify Sans', cursive;
+  color:black; /* Bright yellow to macht the red */
+  /* text-shadow: 2px 2px 0 #f00;  Red shadow for a retro effect */
+  padding-left: 1rem;
+  margin: 0;
 }
 
 .headerAuthor {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: 'Pixelify Sans', cursive;
   z-index: 2;
 }
@@ -31,6 +48,11 @@
  margin-right: 1.5rem;
  cursor: pointer;
 
+}
+
+.header img:hover {
+  transform: translateX(5px) translateY(-5px);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .containerIcons {
@@ -46,6 +68,8 @@
   justify-content: center;
   align-items: center;
   height: 250px;
+  /* border: 4px solid #00f; /* Blue border retro inspo*/
+  text-shadow: 2px 2px 0 #ee7575; /* Red shadow for a retro effect */
 }
 
 .icon{
@@ -85,7 +109,7 @@
 
 .aboutMeContainer p {
   flex: 1;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: justify;
   margin-left: 3rem;
   margin-top: auto;
@@ -108,6 +132,8 @@
   flex-direction: row;
   align-items: center; /* Align items vertically in the center */
   justify-content: space-between;
+  border: 4px solid #106d8e; /* Blue border retro inspo*/
+  border-radius: 10px;
 }
 
 
@@ -134,11 +160,13 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .techStackButton:hover {
   background-color: #0056b3;
+
+  
 }
 
 .techStackButton:active {
@@ -170,7 +198,7 @@
   margin: 0.5rem;
   border: none;
   border-radius: 0px;
-  background-color: #007BFF;
+  background-color: #106d8e;
   color: white;
   font-size: 16px;
   cursor: default;
@@ -326,7 +354,7 @@ font-family: 'Pixelify Sans', cursive;
   text-decoration: none;
   margin: 0.5rem;
   border-radius: 0px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
   white-space: nowrap;
 }
 
@@ -341,13 +369,18 @@ font-family: 'Pixelify Sans', cursive;
   text-decoration: none;
   margin: 0.5rem;
   border-radius: 0px;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
   white-space: nowrap;
 }
 
 .buttonFooter2:hover {
   background-color: #3c3d3e;
+  transform: translateX(5px) translateY(-5px);
+  text-shadow: 3px 3px 0 #ee7575, -3px -3px 0 #106d8e; /* Glitch effect */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
+
 
 .buttonFooter3 {
   background-color: #7e20dc;
@@ -362,6 +395,9 @@ font-family: 'Pixelify Sans', cursive;
 
 .buttonFooter3:hover {
   background-color: #3c3d3e;
+  transform: translateX(5px) translateY(-5px);
+  text-shadow: 3px 3px 0 #ee7575, -3px -3px 0 #106d8e;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 
