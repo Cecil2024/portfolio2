@@ -96,7 +96,7 @@ export default function Home() {;
             <p>This board outlines the processes for optimizing and enhancing the website for "Mrs. Bee Coffee London." I began by identifying the strengths of the current website, then explore potential user personas. With the suggested improvements implemented, I designed a new website that features clean visuals and professional content, ensuring smooth navigation for users.</p>
           </div>
           <div className={styles.project}>
-            <Link href="https://www.figma.com/board/KqL6poiU120C3r5EFA2R89/Mrs.-Bee?node-id=0-1&t=VauDG2KrrUzVB7jY-1/" target="_blank"><h3> <Image src="/book-64.png" alt="Book icon" width={64} height={64} /> The Know-it-all</h3></Link>
+            <Link href="https://github.com/Cecil2024/The-Know-It-ALL" target="_blank"><h3> <Image src="/book-64.png" alt="Book icon" width={64} height={64} /> The Know-it-all</h3></Link>
             <p>Welcome to an AI chatbot that holds the answers to all your questions! But what makes it truly special is that you can tailor its responses to suit your preferences—so go ahead and explore! You might just be amazed by what you discover!
             In this project, I had the exciting opportunity to lead the UI and front-end development, crafting an engaging and intuitive user experience.</p>
           </div>
